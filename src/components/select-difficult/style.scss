@@ -1,0 +1,29 @@
+@import "../../styles/abstracts/constants";
+@import "../../styles/abstracts/mixins";
+
+.difficult {
+  margin-top: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  color: $text-color;
+  font-family: 'Oswald', sans-serif;
+
+  &__title {
+    font-size: 1.1em;
+    @include media-mobile {
+      font-size: 0.8em;
+    }
+  }
+
+  &__select {
+    background-color: $background-color-btn;
+    border-radius: 5px 10px;
+    cursor: pointer;
+    border: #5A072D 2px solid;
+    @include media-mobile {
+      font-size: 0.8em;
+    }
+  }
+}

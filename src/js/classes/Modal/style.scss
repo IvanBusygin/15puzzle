@@ -1,0 +1,90 @@
+.modal {
+  position: fixed;
+  z-index: 999;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100vw;
+  overflow-y: auto;
+  display: block;
+}
+
+.is-modal-open {
+  overflow: hidden;
+}
+
+.modal__overlay {
+  height: 100%;
+  width: 100%;
+  background-color: #6c6a5a;
+  opacity: 0.8;
+}
+
+.modal__inner {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  max-width: 994px;
+  width: 100%;
+  background-color: #D27D6F;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+.modal__header {
+  position: relative;
+  padding: 10px 10px;
+}
+
+.modal__body {
+  padding: 0 10px 20px;
+}
+
+.modal__buttons {
+  margin-top: 48px;
+  text-align: center;
+}
+
+.modal__title {
+  font-size: 24px;
+  line-height: 1.8;
+  font-family: sans-serif;
+  font-weight: 400;
+  text-shadow: 2px 1px;
+  margin: 0;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.modal__close {
+  padding-top: 4px;
+  position: absolute;
+  top: 12px;
+  right: 24px;
+  cursor: pointer;
+}
+
+.modal__close:hover {
+  opacity: 0.8;
+}
+
+.modal__you-win {
+  font-family: 'Marck Script', cursive;
+  font-size: 2em;
+  text-align: center;
+  color: white;
+}
+
+.modal__results-tr {
+  text-align: center;
+  border: #5A072D 1px solid;
+}
+
+.modal__results-tab {
+  font-family: 'Oswald', sans-serif;
+  margin: auto;
+  font-size: 1.1em;
+  border: #5A072D 1px solid;
+}

@@ -1,0 +1,111 @@
+@import "abstracts/constants";
+@import "abstracts/mixins";
+
+body {
+  width: 100vw;
+  height: 100vh;
+  background-image: url("../assets/puzzle15.jpg");
+  background-repeat: round;
+  background-size: 164px, 136.67px;
+  overflow: hidden;
+  margin: 0;
+}
+
+.container {
+  margin: 0;
+  background-image: url("../assets/table.jpg");
+  background-repeat: round;
+  border-radius: 20px;
+  box-shadow: 5px 5px 20px 10px #35240b;
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.game-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.grid {
+  font-family: 'Rubik Bubbles', cursive;
+  margin: 10px;
+  box-sizing: border-box;
+  transition: font-size .3s ease;
+  font-size: 1px;
+  position: relative;
+
+  @include media-tablet {
+  }
+
+  &__item {
+    position: absolute;
+    box-sizing: border-box;
+    transition: transform 0.13s ease;
+
+    & div {
+      box-sizing: border-box;
+      border-radius: 5% 15%;
+      border: #5A072D 2px solid;
+      background-image: url("../assets/background-cell.jpg");
+      width: 100%;
+      height: 100%;
+      color: brown;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      cursor: pointer;
+    }
+
+    &--empty {
+      opacity: 0;
+    }
+  }
+}
+
+.game-block {
+}
+
+.statistics {
+  margin: 0 5px 0 5px;
+  font-family: 'Oswald', sans-serif;
+  font-size: 1.1em;
+  color: $text-color;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+
+  @include media-mobile {
+    font-size: 0.9em;
+    gap: 5px;
+  }
+
+  &__time {
+    display: flex;
+    gap: 10px;
+  }
+
+  &__time-title {
+  }
+
+  &__time-value {
+  }
+
+  &__moves {
+    display: flex;
+    gap: 10px;
+  }
+
+  &__moves-title {
+  }
+
+  &__moves-value {
+  }
+}
+

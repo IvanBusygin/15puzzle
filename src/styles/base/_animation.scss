@@ -1,0 +1,60 @@
+
+.from-right {
+  animation-name: from-right;
+  animation-duration: .35s;
+  animation-iteration-count: 1;
+}
+
+.from-left {
+  animation-name: from-left;
+  animation-duration: .35s;
+  animation-iteration-count: 1;
+}
+
+.from-top {
+  animation-name: from-top;
+  animation-duration: .35s;
+  animation-iteration-count: 1;
+}
+
+.from-bottom {
+  animation-name: from-bottom;
+  animation-duration: .35s;
+  animation-iteration-count: 1;
+}
+
+@keyframes from-right {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@keyframes from-left {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@keyframes from-top {
+  0% {
+    transform: translateY(-100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@keyframes from-bottom {
+  0% {
+    transform: translateY(100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}

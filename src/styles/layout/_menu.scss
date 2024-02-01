@@ -1,0 +1,115 @@
+.menu {
+  padding: 5px;
+  display: flex;
+  flex-wrap: wrap;
+  font-family: 'Marck Script', cursive;
+  font-size: 1.2em;
+
+  @include media-tablet {
+    font-size: 1em;
+  }
+
+  &__btn {
+    margin: 10px 20px 10px auto;
+    display: flex;
+    gap: 5px;
+    justify-content: flex-end;
+    flex-shrink: 1;
+    flex-wrap: wrap;
+  }
+
+  &__start {
+    font-size: 1.4em;
+    width: 90%;
+    margin: auto;
+    border: #5A072D 1px solid;
+    border-radius: 10px 20px;
+    background-color: $background-color-btn;
+    cursor: pointer;
+    @include media-tablet {
+      font-size: 1.1em;
+    }
+
+    &:hover {
+      background: #96CB49;
+    }
+
+    &:active {
+      background: #D27D6F;
+    }
+  }
+
+  &__save {
+    margin-left: auto;
+    padding: 0 10px 0 10px;
+    border: #5A072D 1px solid;
+    border-radius: 10px 20px;
+    background-color: $background-color-btn;
+    cursor: pointer;
+    flex-shrink: 1;
+    @include media-tablet {
+      font-size: 0.9em;
+    }
+
+    &:hover {
+      background: #96CB49;
+    }
+
+    &:active {
+      background: #D27D6F;
+    }
+  }
+
+  &__load {
+    padding: 0 10px 0 10px;
+    border: #5A072D 1px solid;
+    border-radius: 10px 20px;
+    background-color: $background-color-btn;
+    cursor: pointer;
+    flex-shrink: 1;
+    @include media-tablet {
+      font-size: 0.9em;
+    }
+
+    &:hover {
+      background: #96CB49;
+    }
+
+    &:active {
+      background: #D27D6F;
+    }
+  }
+
+  &__mute {
+    background: $background-color-btn;
+    border: #5A072D 1px solid;
+    border-radius: 10px 20px;
+    cursor: pointer;
+    @include media-tablet {
+      font-size: 0.9em;
+    }
+
+    &:active {
+      background: #D27D6F;
+    }
+
+    &--mute {
+      background: #62A1B3;
+    }
+  }
+
+  &__results {
+    padding: 0 10px 0 10px;
+    border: #5A072D 1px solid;
+    border-radius: 10px 20px;
+    background-color: $background-color-btn;
+
+    &:hover {
+      background: #96CB49;
+    }
+
+    &:active {
+      background: #D27D6F;
+    }
+  }
+}

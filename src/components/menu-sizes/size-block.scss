@@ -1,0 +1,32 @@
+@import "../../styles/abstracts/mixins";
+
+.size-block {
+  padding: 5px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+
+  @include media-tablet {
+    font-size: 0.8em;
+    gap: 5px;
+  }
+
+  &__btn {
+    font-family: 'Oswald', sans-serif;
+    font-size: 1.1em;
+    cursor: pointer;
+    border: #5A072D 1px solid;
+    border-radius: 10px 20px;
+    background-color: $background-color-btn;
+
+    &:hover {
+      background: #96CB49;
+    }
+
+    &:active {
+      background: #D27D6F;
+    }
+  }
+}
